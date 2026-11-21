@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taakanexia - 次世代DNSサービス</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#1e3a8a',
+                        dark: '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif; }
+        .gradient-text {
+            background: linear-gradient(to right, #3b82f6, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-bg {
+            background: radial-gradient(circle at top right, #1e293b, #0f172a);
+        }
+    </style>
+</head>
+<body class="bg-dark text-gray-100">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold tracking-tighter">
+            <i class="fa-solid fa-network-wired text-primary mr-2"></i>Taakanexia
+        </div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium">
+            <a href="index.html#features" class="hover:text-primary transition">特徴</a>
+            <a href="index.html#how-it-works" class="hover:text-primary transition">仕組み</a>
+            <a href="index.html#pricing" class="hover:text-primary transition">料金</a>
+        </div>
+        <a href="http://admin.apyrentic.com" class="bg-primary hover:bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-semibold transition shadow-lg shadow-blue-500/30">
+            ダッシュボード
+        </a>
+    </nav>
+
+    <header class="hero-bg border-b border-gray-800">
+        <div class="container mx-auto px-6 py-24 text-center md:py-32">
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+                高速でセキュア。<br class="hidden md:block">
+                <span class="gradient-text">次世代のDNSサービス。</span>
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10">
+                Taakanexiaは、開発者やビジネス向けに設計された、低遅延かつ高信頼性のDNSプラットフォームです。直感的なUIと強力なAPIで、インフラの管理を劇的にシンプルにします。
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="http://admin.apyrentic.com" class="bg-primary hover:bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-bold transition shadow-lg shadow-blue-500/50 flex items-center justify-center">
+                    無料で始める <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+                <button class="bg-gray-800 hover:bg-gray-700 text-white px-8 py-4 rounded-full text-lg font-bold transition border border-gray-700">
+                    ドキュメントを読む
+                </button>
+            </div>
+            <div class="mt-16 text-gray-500 text-sm">
+                <p>現在プレビュー版として稼働中</p>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="py-20 bg-[#0b1120]">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">なぜ Taakanexia なのか？</h2>
+                <p class="text-gray-400">最新技術スタックで構築されたインフラが、最高のパフォーマンスを提供します。</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-primary transition">
+                    <div class="w-12 h-12 bg-blue-900/50 text-primary rounded-xl flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">超低遅延レスポンス</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        エッジネットワークを活用し、世界中のどこからでもミリ秒単位の応答速度を実現します。
+                    </p>
+                </div>
+                <div class="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-primary transition">
+                    <div class="w-12 h-12 bg-blue-900/50 text-primary rounded-xl flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">DDoS対策 & セキュリティ</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        DNSSECや最新の暗号化プロトコルを標準サポート。悪意ある攻撃から強固に守ります。
+                    </p>
+                </div>
+                <div class="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-primary transition">
+                    <div class="w-12 h-12 bg-blue-900/50 text-primary rounded-xl flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">開発者フレンドリー</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        APIファーストで設計されており、CI/CDパイプラインとの統合が容易に行えます。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-gray-800 py-10 text-center text-gray-500">
+        <div class="container mx-auto px-6">
+            <div class="text-xl font-bold mb-4 tracking-tighter text-gray-300">
+                <i class="fa-solid fa-network-wired text-primary mr-2"></i>Taakanexia
+            </div>
+            <p>&copy; 2026 Taakanexia. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
